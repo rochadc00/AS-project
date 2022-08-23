@@ -1,0 +1,514 @@
+.title{
+    width: fit-content;
+    margin: auto;
+    font-size: 30px;
+}
+
+.middle-buttons{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.middle-buttons > div{
+    align-items: top;
+    display: flex;
+    flex-direction: table-column;
+    column-gap: 250px; 
+    transition: 0.3s;
+}
+
+/* Deposit && Withdraw div */
+.middle-buttons > div:nth-child(1) > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+}
+
+/* money, above deposit */
+.middle-buttons > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+    font-size:60px;
+    font-weight: bold;
+    color: var(--pink);
+}
+
+/* Deposit && Withdraw buttons */
+.middle-buttons > div:nth-child(1) > div:nth-child(1) > a > button{ 
+    width: 350px;
+    height: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+/* button deposit */
+.middle-buttons > div:nth-child(1) > div:nth-child(1) > a:nth-child(2) > button{
+    background-color: var(--pink);
+}
+/* button Withdraw */
+.middle-buttons > div:nth-child(1) > div:nth-child(1) > a:nth-child(3) > button{
+    background-color: var(--font-gray);
+}
+
+/* Points div */
+.middle-buttons > div:nth-child(1) > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+}
+
+/* Points above win GB points */
+.middle-buttons > div:nth-child(1) > div:nth-child(2) > div:nth-child(1){
+    font-size:60px;
+    font-weight: bold;
+    color: var(--light-green);
+}
+
+/* Points button */
+.middle-buttons > div:nth-child(1) > div:nth-child(2) > a > button{
+    width: 350px;
+    height: 50px;
+    font-size: 35px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 10px;;
+    background-color: var(--light-green);
+}
+
+#line{
+    width: 830px;
+    height: fit-content;
+    margin: auto;
+    margin-top: 55px;
+    color: var(--font-gray);
+}
+
+.bottom-buttons{
+    height: fit-content;
+    margin: auto;
+    margin-top: 55px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+     
+
+}
+/* 1st three buttons */
+.bottom-buttons > a > button{
+    width: 350px; 
+    height: 40px;
+    background-color: #d9d9d9;
+    color: var(--font-gray);
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.bottom-buttons > a{
+    position: relative;
+}
+
+.bottom-buttons > a > div{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+    margin: auto;
+}
+
+.bottom-buttons > a > div > button{
+    height: 38px;
+    color: white;
+    background-color: var(--pink);
+    border: none;
+    font-size: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: bold;
+    width: 75px;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 1030px) {
+	.middle-buttons > div{
+		  column-gap: 120px; 
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.middle-buttons > div {
+		flex-direction: column;
+		  row-gap: 25px; 
+	}
+	
+	.middle-buttons {
+		bottom: 50px;
+	}
+	
+	#line {
+		display: none;
+	}
+}
+
+/* ----------------------------- VIEWPORTS ---------------------------------*/
+/* 320x480 && 320x568 && 320x640 */
+@media only screen and (max-width: 358px) and (max-height: 641px)
+                   and (min-width: 319px) and (min-height: 479px){
+
+    .title{
+        top: 50px;
+        font-size: 18px;
+    }
+
+    .middle-buttons{
+        bottom: 25px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+        font-size: 20px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > a > button{ 
+        width: 200px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > div:nth-child(1){
+        font-size: 20px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > a > button{
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .bottom-buttons{
+        bottom: 15px;
+    }
+
+    .bottom-buttons > a > button{
+        width: 250px; 
+        height: 20px;
+        font-size: 15px;
+    }
+
+    .bottom-buttons > a > div > button{
+        height: 20px;
+        width: 70px;
+        font-size: 15px;
+        text-align: left;
+    }
+}
+
+/* 360x640 && 360x592 */
+@media only screen and (max-width: 375px) and (max-height: 812px)
+                   and (min-width: 359px) and (min-height: 591px){
+
+    .title{
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    .middle-buttons{
+        bottom: 100px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+        font-size:30px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > a > button{ 
+        width: 200px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > div:nth-child(1){
+        font-size: 30px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > a > button{
+        width: 200px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .bottom-buttons > a > button{
+        width: 300px; 
+        height: 25px;
+        font-size: 20px;
+    }
+
+    .bottom-buttons > a > div > button{
+        height: 25px;
+        width: 70px;
+        font-size: 20px;
+        text-align: left;
+    }
+}
+
+/* 375x812 */
+@media only screen and (max-width: 376px) and (max-height: 813px)
+                   and (min-width: 374px) and (min-height: 811px){
+
+    .title{
+        top: 50px;
+        font-size: 25px;
+    }
+
+    .middle-buttons{
+        bottom: 120px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+        font-size:35px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > a > button{ 
+        width: 250px;
+        height: 45px;
+        font-size: 25px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > div:nth-child(1){
+        font-size: 35px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > a > button{
+        width: 250px;
+        height: 45px;
+        font-size: 25px;
+    }
+
+    .bottom-buttons > a > button{
+        width: 300px; 
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .bottom-buttons > a > div > button{
+        height: 40px;
+        width: 70px;
+        font-size: 20px;
+        text-align: left;
+    }
+}
+
+/* 375x667 */
+@media only screen and (max-width: 382px) and (max-height: 796px)
+                   and (min-width: 374px) and (min-height: 590px){
+
+    .title{
+        top: 50px;
+        font-size: 20px;
+    }
+
+    .middle-buttons{
+        bottom: 120px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+        font-size:35px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > a > button{ 
+        width: 250px;
+        height: 35px;
+        font-size: 25px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > div:nth-child(1){
+        font-size: 35px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > a > button{
+        width: 250px;
+        height: 35px;
+        font-size: 25px;
+    }
+
+    .bottom-buttons > a > button{
+        width: 300px; 
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .bottom-buttons > a > div > button{
+        height: 40px;
+        width: 70px;
+        font-size: 20px;
+        text-align: left;
+    }
+}
+
+/* 384x592 */
+@media only screen and (max-width: 412px) and (max-height: 797px)
+                   and (min-width: 383px) and (min-height: 591px){
+
+    .title{ /* workaround for title */
+        top: 110px;
+        font-size: 18px;
+    }
+
+    .middle-buttons{
+        bottom: 80px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+        font-size:35px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > a > button{ 
+        width: 250px;
+        height: 35px;
+        font-size: 25px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > div:nth-child(1){
+        font-size: 35px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > a > button{
+        width: 250px;
+        height: 35px;
+        font-size: 25px;
+    }
+
+    .bottom-buttons{
+        margin-bottom: 50px;
+    }
+
+    .bottom-buttons > a > button{
+        bottom: 500px;
+        width: 300px; 
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .bottom-buttons > a > div > button{
+        height: 30px;
+        width: 70px;
+        font-size: 20px;
+        text-align: left;
+    }
+}
+
+/* 414x736 */
+@media only screen and (max-width: 478px) and (max-height: 798px)
+                   and (min-width: 413px) and (min-height: 735px){
+
+    .title{
+        top: 50px;
+        font-size: 35px;
+    }
+
+    .middle-buttons{
+        bottom: 80px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+        font-size:35px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > a > button{ 
+        width: 250px;
+        height: 35px;
+        font-size: 25px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > div:nth-child(1){
+        font-size: 35px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > a > button{
+        width: 250px;
+        height: 35px;
+        font-size: 25px;
+    }
+
+    .bottom-buttons{
+        bottom: 35px;
+    }
+
+    .bottom-buttons > a > button{
+        bottom: 500px;
+        width: 300px; 
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .bottom-buttons > a > div > button{
+        height: 30px;
+        width: 70px;
+        font-size: 20px;
+        text-align: left;
+    }
+}
+
+/* 480x800 */
+@media only screen and (max-width: 481px) and (max-height: 801px)
+                   and (min-width: 479px) and (min-height: 799px){ 
+
+
+    .title{
+        top: 70px;
+        font-size: 35px;
+    }
+
+    .middle-buttons{
+        bottom: 80px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+        font-size:45px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(1) > a > button{ 
+        width: 300px;
+        height: 45px;
+        font-size: 25px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > div:nth-child(1){
+        font-size: 45px;
+    }
+
+    .middle-buttons > div:nth-child(1) > div:nth-child(2) > a > button{
+        width: 300px;
+        height: 45px;
+        font-size: 25px;
+    }
+
+    .bottom-buttons{
+        bottom: 35px;
+    }
+
+    .bottom-buttons > a > button{
+        bottom: 500px;
+        width: 350px; 
+        height: 40px;
+        font-size: 25px;
+    }
+
+    .bottom-buttons > a > div > button{
+        height: 40px;
+        width: 70px;
+        font-size: 20px;
+        text-align: left;
+    }
+}
+
+
+

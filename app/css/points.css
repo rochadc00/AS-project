@@ -1,0 +1,187 @@
+body {
+    background: var(--pink);
+    background: -moz-linear-gradient(180deg, var(--pink) 10%, rgba(245,87,71,1) 60%, rgba(245,191,0,1) 100%);
+    background: -webkit-linear-gradient(180deg, var(--pink) 10%, rgba(245,87,71,1) 60%, rgba(245,191,0,1) 100%);
+    background: linear-gradient(180deg, var(--pink) 10%, rgba(245,87,71,1) 60%, rgba(245,191,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f50083",endColorstr="#f5bf00",GradientType=1);
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+}
+
+.points-container {
+	display: flex;
+	color: white;
+	margin-top: 70px;
+	padding-top: 50px;
+}
+
+.points-container > div {
+	width: 100%;
+	text-align: center;
+	row-gap: 30px;
+	display: grid;
+}
+
+.points-container > div > div {
+	width: 450px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+	height: 600px;
+	overflow-y: auto;
+	transition: 0.3s;
+}
+
+/* width */
+.points-container > div > div::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.points-container > div > div::-webkit-scrollbar-track {
+  background: #d7d6d6;
+}
+
+/* Handle */
+.points-container > div > div::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Handle on hover */
+.points-container > div > div::-webkit-scrollbar-thumb:hover {
+  background: #65CA87;
+}
+
+.points-container > div > div > div:nth-child(1) {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.points-container > div:nth-child(1) > div > div:nth-child(2) {
+	height: 80px;
+	font-size: 25px;
+    font-weight: bold;
+}
+
+.points-container > div > div > div:not(:nth-child(1)) {
+	box-shadow: 0px 10px 20px -15px black;
+	border-radius: 20px;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	padding: 0 15px;
+}
+
+.points-container > div:nth-child(1) >  div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+	width: 100%;
+}
+
+.points-container > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+	column-gap: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.points-container > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) img {
+	width: 30px;
+}
+
+.points-container > div:nth-child(2) > div > div:nth-child(2) {
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.points-container .daily-rewards {
+	display: flex;
+	row-gap: 20px;
+	flex-direction: column;
+	padding: 20px !important;
+}
+
+.points-container .daily-rewards > div:nth-child(2), .points-container > div > div > div:nth-child(3) > div {
+	display: flex;
+	column-gap: 20px;
+	flex-direction: row;
+}
+
+.points-container .daily-rewards > div:not(:nth-child(3)) > div {
+	height: 90px;
+	width: 90px;
+	position: relative;
+	border: 2px solid white;
+	border-radius: 20px;
+	background-color: #f26da5;
+	font-weight: bold;
+	padding: 5px;
+	font-size: 21px;
+	transition: 0.3s;
+}
+
+.points-container .daily-rewards > div:nth-child(3) {
+	font-weight: bold;
+	margin-top: 30px
+}
+
+.points-container .store-items {
+	background-color: white;
+	color: var(--font-gray);
+	height: 100px;
+	align-items: center;
+	display: grid;
+	padding: 0 20px;
+	border-radius: 20px;
+	width: 90%;
+	box-shadow: inset 0px 0px 2px black;
+}
+
+.points-container .store-items > div {
+	display: flex;
+}
+
+.points-container .store-items > div > div:nth-child(1) {
+	width: 100%;
+}
+
+.points-container .store-items > div > div:nth-child(2) {
+	display: flex;
+	align-items: center;
+	text-align: right;
+	column-gap: 10px;
+}
+
+.points-container .store-items > div > div:nth-child(2) > div:nth-child(1) {
+	color: #65CA87;
+	font-weight: bold;
+}
+
+.points-container .store-items > div > div:nth-child(2) > div:nth-child(2) {
+	display: flex;
+	flex-direction: row;
+}
+
+.points-container .store-items > div > div:nth-child(2) img {
+  width: 30px;
+  filter: invert(25%) sepia(22%) saturate(821%) hue-rotate(84deg) brightness(85%) contrast(90%);
+}
+
+@media only screen and (max-width: 1050px) {
+	.points-container {
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.points-container .daily-rewards > div:not(:nth-child(3)) > div {
+    height: 70px;
+    width: 70px;
+  	font-size: 18px;  
+  }
+	.points-container > div > div {
+   	width: 90%;
+  }
+}
+

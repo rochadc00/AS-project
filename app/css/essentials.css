@@ -1,0 +1,42 @@
+/* ---------------------General--------------------- */
+
+:root {
+	--font-gray: #636363;
+	--font-light-gray: #B0B0B0;
+	--pink: #F50083;
+  --light-green: #65ca87; /* Usually associated with points */
+  --background-light-gray: #d9d9d9;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, a:visited {
+  color: unset;
+}
+
+.clickable:hover {
+  opacity: 0.8;
+}
+
+.absolute-centered {
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  position: absolute;
+}

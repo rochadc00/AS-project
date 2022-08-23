@@ -1,0 +1,154 @@
+.faq-heading{
+    width: fit-content;
+    margin: auto;
+    font-size: 45px; 
+    margin-bottom: 150px;
+    
+}
+.faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hr-line{
+  width: 100%;
+  margin: auto;
+}
+
+.faq-page{
+    color: var(--pink);
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+
+.faq-body{
+   margin: auto;
+   text-align: center; 
+   width: 50%; 
+   padding: auto;
+   
+}
+
+.active,
+.faq-page:hover{
+    background-color: #ebe4e4;
+}
+
+.faq-body{
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after{
+    content: '\02795';
+    font-size: 20px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after{
+    content: "\2796";
+}
+
+@media only screen and (max-width: 358px) and (max-height: 641px)
+                   and (min-width: 319px) and (min-height: 479px){
+
+    .faq-heading{
+        font-size: 25px;
+        margin-top: -100px; 
+    }
+
+    .hr-line{
+        width: 90%;
+    }
+
+    .faq-page{
+        width: 100%;
+        font-size: 15px;
+        padding: 10px 2px;
+    }
+}
+
+@media only screen and (max-width: 375px) and (max-height: 812px)
+                   and (min-width: 359px) and (min-height: 591px){
+
+    .faq-heading{
+        font-size: 25px;
+        margin-top: -50px; 
+    }
+
+    .hr-line{
+        width: 100%;
+    }
+
+    .faq-page{
+        width: 100%;
+        font-size: 18px;
+        padding: 8px 2px;
+    }
+}
+
+@media only screen and (max-width: 412px) and (max-height: 797px)
+                   and (min-width: 383px) and (min-height: 591px){
+
+    .faq-heading{
+        font-size: 25px;
+        margin-top: -50px; 
+    }
+
+    .hr-line{
+        width: 100%;
+    }
+
+    .faq-page{
+        width: 100%;
+        font-size: 18px;
+        padding: 8px 2px;
+    }
+}
+
+@media only screen and (max-width: 478px) and (max-height: 798px)
+                   and (min-width: 413px) and (min-height: 735px){
+
+    .faq-heading{
+        font-size: 35px;
+        margin-top: -80px; 
+    }
+
+    .hr-line{
+        width: 100%;
+    }
+
+    .faq-page{
+        width: 100%;
+        font-size: 18px;
+        padding: 10px 2px;
+    }
+}
+
+@media only screen and (max-width: 481px) and (max-height: 801px)
+                   and (min-width: 479px) and (min-height: 799px){ 
+
+    .faq-heading{
+        font-size: 35px;
+        margin-top: -80px; 
+    }
+
+    .hr-line{
+        width: 100%;
+    }
+
+    .faq-page{
+        width: 100%;
+        font-size: 19px;
+        padding: 15px 5px;
+    }
+}
+
+

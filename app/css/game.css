@@ -1,0 +1,291 @@
+/* ----------------------Search--------------------- */
+
+.input-icons i {
+  position: absolute;
+}
+         
+.input-icons {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+}
+
+.input-field {
+    border-radius: 25px;
+    width: 150%;
+    padding: 10px;
+    padding-left: 10px;
+    color: black;
+    background-color: lightgrey;
+    font-size: medium;
+    padding-left: 35px;
+    border: none;
+  }
+
+.input-field:active, .input-field:focus, .input-field:focus-visible {
+    border: 2px solid var(--pink);
+    outline: none;
+}
+
+
+.box{
+display: grid;
+width: 1500px;
+height: 100px;
+background-color: #d9d9d9;
+margin: 45px;
+padding: 34px;
+
+} 
+.box :first-child {
+    align-self: center;
+}
+
+.vertical {
+position: absolute;
+border-left: 5px solid var(--pink);
+height: 169px;
+left: -0.3%;
+}
+
+.Lowvertical {
+    position: absolute;
+    border-left: 5px solid var(--pink);
+    top:0%;
+    height: 30px;
+    left: 0%;
+    }
+
+.box :nth-child(2) {
+vertical-align: top;
+}
+
+.horizontalHigh {
+position: absolute;
+width: 1544px;
+height: 35px;
+background-color: #d9d9d9;
+left:11.85%;
+top:23.25%;
+}
+
+.horizontal {
+position: absolute;
+top:26.5%;
+width: 1544px;
+height: 137px;
+background-color: #f2f2f2;
+left:11.9%;
+}
+
+.horizontalHigh :first-child {
+align-self: center;
+}
+
+.nameOfGame {
+position: absolute;
+width: 169px;
+height: 30px;
+background-color: #404040;
+left:2.515%;
+top:37.6%;
+font-size: larger;
+color:white;
+font-weight: bold;
+text-align: center;
+}
+
+
+.textAbove {
+background-color: #d9d9d9;
+color:	#808080;
+width: 100px;
+padding-right: 0%;
+padding-top: 10px;
+padding-bottom:10px;
+font-size: medium;
+padding-left: 15px;
+text-align: right;
+border: none;
+}
+
+.textAbove2 {
+background-color: #d9d9d9;
+color: #808080;
+width: 46px;
+padding-right: 0px;
+padding-top: 10px;
+padding-bottom:10px;
+font-size: medium;
+border: none;
+}
+
+.RESULT1 {
+background-color: #f2f2f2;
+color: red;
+width: 85px;
+padding-top: 15px;
+padding-left:70px;
+font-size: large;
+border: none;
+font-weight: bold;
+}
+
+.result{
+background-color: #f2f2f2;
+color: red;
+width: 85px;
+padding-top: 15px;
+padding-left:180px;
+font-size: large;
+border: none;
+font-weight: bold;
+}
+
+.resultFor3 {
+background-color: #f2f2f2;
+color: red;
+width: 125px;
+padding-top: 20px;
+padding-left:180px;
+font-size: large;
+border: none;
+font-weight: bold;
+}
+
+.Player1 {
+background-color: #f2f2f2;
+color:BLACK;
+padding-top: 15px;
+width: 400px;
+font-size: large;
+border: none;
+font-weight: bold;
+}
+
+.RESULT2 {
+background-color: #f2f2f2;
+color: red;
+width: 85px;
+padding-top: 20px;
+padding-left:70px;
+font-size: large;
+border: none;
+font-weight: bold;
+}
+
+.Player2 {
+background-color: #f2f2f2;
+color:BLACK;
+padding-top: 20px;
+width: 400px;
+font-size: large;
+border: none;
+font-weight: bold;
+}
+  
+.RESULT3 {
+background-color: #f2f2f2;
+color: red;
+width: 125px;
+padding-top: 20px;
+padding-left:70px;
+font-size: large;
+border: none;
+font-weight: bold;
+}
+
+.Player3 {
+background-color: #f2f2f2;
+color:BLACK;
+padding-top: 20px;
+width: 361px;
+font-size: large;
+border: none;
+font-weight: bold;
+}
+
+.odd {
+border-radius: 10%;
+background-color: #ffffff;
+color:#e6005c;
+width: 60px;
+font-size: large;
+border: none;
+text-align: center;
+font-weight: bold;
+}
+
+
+.dot {
+height: 10px;
+width: 10px;
+background-color: #ff3333;
+border-radius: 50%;
+display: inline-block;
+}
+
+.textAbove3 {
+background-color: #d9d9d9;
+font-weight: bold;
+width: 600px;
+padding-left: 400px;
+padding-top: 10px;
+padding-bottom:10px;
+font-size: medium;
+border: none;
+}
+
+.textAbove4 {
+background-color: #d9d9d9;
+font-weight: bold;
+width: 50px;
+padding-left: 140px;
+padding-top: 10px;
+padding-bottom:10px;
+font-size: medium;
+border: none;
+}
+
+.title-Game {
+    
+font-size: 15px; 
+padding: 10px;
+color:#686868;
+left:80%;
+}
+
+
+  /* ----------------------StarLeftSearchBar--------------------- */
+#starLeftSearchBar{
+    position: absolute;
+    top: 9%;
+    left: 11%;
+    width: 23px;
+  }
+  
+  /* ----------------------FotoSearchBar--------------------- */
+  #FotoSearchBar{
+    position: absolute;
+    top: 23.2%;
+    left: 2.5%;
+    width: 169px;
+  }
+  
+  /* ----------------------Fototwitch--------------------- */
+  #twitch{
+    position: absolute;
+    top: 5px;
+    left: 95.5%;
+    width: 25px;
+  }
+  
+  /* ----------------------Fototrophy--------------------- */
+  #taça{
+    position: absolute;
+    top: 5px;
+    left: 97.5%;
+    width: 25px;
+  }

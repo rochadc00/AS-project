@@ -1,0 +1,321 @@
+/* -----------------sticky navbar----------------- */
+body {
+	margin: 0;
+	margin-top: 65px !important;
+	font-family: 'Inter', sans-serif;
+}
+
+#gamebet > img {
+	display: none;
+}
+
+#navbar {
+	overflow: hidden;
+	background-color: var(--pink);  
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	height: 70px;
+}
+        
+#navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+	
+#navbar > a:not(:first-child) {
+	padding: 20px;	
+}
+
+#navbar > a:first-child {
+	padding: 10px;
+	font-size: 40px;
+	display: flex;
+}
+
+.content {
+  	padding: 16px;
+}
+        
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin: auto;
+}
+        
+.sticky + .content {
+  	padding-top: 60px;
+}
+
+/* ----------------------TicketImageNavbar--------------------- */
+#ticketNavbarImg{
+  width: 54px;
+  /* changing color of image. Algorithm from https://codepen.io/sosuke/pen/Pjoqqp */
+  filter: invert(100%) sepia(0%) saturate(7434%) hue-rotate(353deg) brightness(113%) contrast(113%);
+  transition: 0.3s;
+}
+
+.ticketNavbar-counter {
+	color: var(--pink);
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	right: -8px;
+	width: 25px;
+	height: 25px;
+	border: 4px solid var(--pink);
+}
+
+.ticketNavbar-counter > div {
+	position: absolute;
+	left: 0;
+	right: -1px;
+	top: 1px;
+	bottom: 0;
+	width: fit-content;
+	height: fit-content;
+	margin: auto;
+	font-size: 18px;
+}
+
+/* ----------------------BalanceBox--------------------- */
+
+.balance-box {
+	position: relative;
+}
+
+.balance-box > div:first-child {
+	width: 100px;
+	background-color: #d7d6d6;
+	border-radius: 20px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+}
+
+.balance-box > div:first-child > div {
+	text-align: left;
+	padding-left: 10px;
+	color: var(--font-gray);
+	font-size: 14px;
+}
+
+.balance-box > div:last-child {
+	background-color: white;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.balance-box > div:last-child > div {
+	background-color: black;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+.balance-box > div:last-child > div:first-child {
+	width: 65%;
+	height: 3px;
+}
+
+.balance-box > div:last-child > div:last-child {
+	height: 65%;
+	width: 3px;
+}
+
+.burger-menu {
+	width: 32px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+	margin: 10px;
+	display: none;
+	cursor: pointer;
+}
+
+.burger-menu > div {
+	background-color: white;
+	height: 3px;
+	pointer-events: none;
+	transition: 0.3s;
+}
+
+.burger-menu-opened > div:nth-child(2) {
+	display: none;
+}
+
+.burger-menu-opened > div:nth-child(1) {
+	transform: rotate(45deg) translateY(5px);
+}
+
+.burger-menu-opened > div:nth-child(3) {
+	transform: rotate(-45deg) translateY(-5px);
+}
+
+.side-navbar {
+	position: fixed;
+	right: 0;
+	width: 300px;
+	background-color: var(--pink);
+	color: white;
+	height: 93%;
+	z-index: 3;
+	top: 70px;
+	box-shadow: 2px 4px 5px 0px black;
+	transition: 0.3s;
+	transform: translateX(0px);
+}
+
+.side-navbar > div {
+	top: 100px;
+	height: fit-content;
+	margin: auto;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.side-navbar > div > div {
+	font-size: 22px;
+	width: 100%;
+	padding: 10px 0;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.side-navbar-hidden {
+	transform: translateX(300px);
+}
+
+@media only screen and (max-width: 1615px) {
+	#navbar a:not(:first-child) {
+		padding-left: 15px;
+		padding-right: 15px;	
+	}
+}
+
+@media only screen and (max-width: 1525px) {
+	#navbar a:not(:first-child) {
+		padding-left: 10px;
+		padding-right: 10px;	
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	#gamebet > span {
+		display: none;
+	}
+
+	#gamebet > img {
+		display: unset;
+	}
+}
+
+@media only screen and (min-width: 1271px) {
+	.side-navbar {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1270px) {
+	#ticketNavbarImg {
+		width: 44px;
+	}
+
+	.ticketNavbar-counter {
+		width: 20px;
+		height: 20px;
+	}
+
+	.ticketNavbar-counter > div {
+		font-size: 15px;
+	}
+
+	.balance-box > div:first-child {
+		height: 30px;
+	}
+
+	.balance-box > div:last-child {
+		width: 30px;
+		height: 30px;
+	}
+
+	#navbar > a:not(:first-child) {
+		display: none;	
+	}
+
+	.burger-menu {
+		display: flex;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	#username {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.side-navbar {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 385px){
+	#gamebet > img {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 321px){
+	#ticketNavbarImg {
+		width: 24px;
+	}
+
+	.ticketNavbar-counter {
+		width: 14px;
+		height: 20px;
+	}
+
+	.ticketNavbar-counter > div {
+		font-size: 15px;
+	}
+
+	.balance-box > div:first-child {
+		height: 30px;
+	}
+
+	.balance-box > div:last-child {
+		width: 30px;
+		height: 30px;
+	}
+
+	#navbar > a:not(:first-child) {
+		display: none;	
+	}
+
+	.burger-menu {
+		display: flex;
+		width: 25px;
+	}
+
+
+}

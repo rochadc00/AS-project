@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - 80:80
+  database:
+    build: .
+    network_mode: "host"
+    command: sh -c "./db-init.sh localhost:80"

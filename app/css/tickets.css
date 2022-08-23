@@ -1,0 +1,74 @@
+.container {
+    margin-top: 100px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title > h1 {
+    font-size: 55px;
+}
+
+.ticket-row {
+    margin: 30px 70px;
+    border-bottom: 1px solid silver;
+    padding-bottom: 35px;
+    transition: 0.3s;
+}
+
+.ticket-row > div:nth-child(1) {
+    font-size: 25px;
+    margin-left: 40px;
+    color: var(--font-light-gray);
+}
+
+.ticket-row > div:nth-child(2) {
+    grid-template-columns: repeat(auto-fill,minmax(370px,1fr));
+    display: grid; 
+    margin: 20px 0;
+    column-gap: 10px;
+}
+
+.ticket-row > div:nth-child(3) {
+    display: flex;
+    column-gap: 20px;
+    margin-left: 40px;
+}
+
+.ticket-row > div:nth-child(3) > div > b {
+    color: var(--pink);
+}
+
+
+/* TICKET BET */
+.ticket-bet {
+    margin: 5px 20px;
+    width: 100%;
+}
+
+.ticket-bet > div {
+    width: 100%;
+}
+
+.ticket-bet > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+    border-top-right-radius: 20px;
+}
+
+.ticket-bet > div:nth-child(1) > div:nth-child(2) {
+    border-bottom-right-radius: 20px;
+}
+
+.ticket-bet > div:nth-child(1) > div:nth-child(2) {
+    width: unset !important;
+}
+
+@media only screen and (max-width: 680px) {
+	.ticket-bet {
+		width: unset !important;
+	}
+	
+	.ticket-row {
+	    margin: 30px 10px !important;
+	}
+}
